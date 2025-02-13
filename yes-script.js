@@ -10,6 +10,11 @@
 //     container.children[index].appendChild(iframe);
 // });
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+
 function sendMessage() {
     const message = document.querySelector('textarea').value;
     // Add your message handling logic here

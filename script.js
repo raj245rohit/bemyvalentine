@@ -12,6 +12,10 @@ const fallingItems = {
 let currentSection = 'rose-day';
 let intervalId;
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 function createFallingItems() {
     const container = document.querySelector('.falling-items');
     container.innerHTML = '';
@@ -75,7 +79,7 @@ document.getElementById('yesBtn').addEventListener('click', showSuccess);
 document.getElementById('noBtn').addEventListener('click', handleNo);
 
 function showSuccess() {
-    window.location.href = 'success.html';
+    window.location.href = 'yes.html';
 }
 
 function handleNo() {
