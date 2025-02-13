@@ -1,14 +1,14 @@
 // Add YouTube video embeds dynamically
-const videoIds = ['leT7O4mMtsc', 'ht3bBTHBHkc', 'VIDEO_ID_3'];
-const container = document.querySelector('.videos-container');
+// const videoIds = ['leT7O4mMtsc', 'ht3bBTHBHkc', 'VIDEO_ID_3'];
+// const container = document.querySelector('.videos-container');
 
-videoIds.forEach((id, index) => {
-    const iframe = document.createElement('iframe');
-    iframe.className = 'youtube-short';
-    iframe.src = `http://www.youtube.com/embed/${id}`;
-    iframe.loading = 'lazy';
-    container.children[index].appendChild(iframe);
-});
+// videoIds.forEach((id, index) => {
+//     const iframe = document.createElement('iframe');
+//     iframe.className = 'youtube-short';
+//     iframe.src = `http://www.youtube.com/embed/${id}`;
+//     iframe.loading = 'lazy';
+//     container.children[index].appendChild(iframe);
+// });
 
 function sendMessage() {
     const message = document.querySelector('textarea').value;
