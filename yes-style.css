@@ -136,13 +136,14 @@ button {
 }
 
 #backButton {
+    margin: 0;
     background: none;
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 0px;
+    top: 0px;
 }
 
 #backButton img{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
